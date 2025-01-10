@@ -16,7 +16,8 @@ jobs:
             echo test, and deploy your project.
       - name: Run a multi-line script as paragraph
         run: >
-            echo Hello, world!\n
+            echo Hello, world!
+            \n
             echo Add other actions to build,
             echo test, and deploy your project.
             
