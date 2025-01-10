@@ -9,13 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run a multi-line script
+      - name: Run a multi-line script line by line
         run: |
             echo Hello, world!
             echo Add other actions to build,
             echo test, and deploy your project.
-            >
-            Hello, world!\n
-            Add other actions to build,
-            test, and deploy your project.
+      - name: Run a multi-line script as paragraph
+        run: >
+              Hello, world!\n
+              Add other actions to build,
+              test, and deploy your project.
             
